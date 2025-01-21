@@ -3,8 +3,7 @@ with sources as(
     select * from {{ ref('raw_customers')}}
 ),
 
-
-with renamed_and_cleaning as(
+renamed_and_cleaning as(
 select
     customer_id,
     company_name,
