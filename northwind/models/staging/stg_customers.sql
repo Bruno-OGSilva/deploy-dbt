@@ -1,5 +1,5 @@
 -- models/staging/stg_customers.sql
-wtih sources as(
+with sources as(
     select * from {{ ref('raw_customers')}}
 ),
 
